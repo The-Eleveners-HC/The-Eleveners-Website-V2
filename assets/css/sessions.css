@@ -361,3 +361,90 @@ footer .footer_text {
 .lightest_blue_shadow {
   text-shadow: 0px 0.55px 1.1px var(--blue), 0.6875px 0.1375px 1.1px var(--blue);
 }
+
+/* Tablet (≤1023px) */
+@media (max-width: 1023px) {
+  .intro_title {
+    font-size: 3.5rem;
+  }
+
+  .intro .intro_paragraph {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+
+  .inverted_title {
+    font-size: 3rem;
+  }
+
+  .session_info_text_1 {
+    font-size: 1.4rem;
+  }
+
+  .session_info_text_2 {
+    font-size: 1rem;
+  }
+
+  .highlighted_sessions_box {
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .session {
+    width: 80%;
+    height: auto;
+  }
+
+  .session .blue_fade h3 {
+    font-size: 1.8rem;
+  }
+
+  .other_activities p {
+    font-size: 1.8rem;
+  }
+
+  .other_activities ul li {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .intro_title {
+    font-size: 2.4rem;
+  }
+
+  .intro .intro_paragraph {
+    font-size: 1rem;
+  }
+
+  .inverted_title {
+    font-size: 2.2rem;
+  }
+
+  .session_info_box {
+    width: 95%;
+  }
+
+  .session {
+    width: 95%;
+  }
+
+  .session .blue_fade h3 {
+    font-size: 1.4rem;
+  }
+
+  .session p {
+    font-size: 1rem;
+  }
+
+  .other_activities p {
+    font-size: 1.4rem;
+    margin-left: 5%;
+  }
+
+  .other_activities ul li {
+    font-size: 1.1rem;
+  }
+}
