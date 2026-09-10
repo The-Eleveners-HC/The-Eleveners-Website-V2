@@ -308,39 +308,37 @@ section {
   --gray-bg: #e7e7e7;
 }
 
-/* Shared Footer Layout */
+/* Footer (social icons) */
 footer {
-  width: 100%;
-  min-height: 120px;
-  background-color: var(--gray-bg);
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  gap: 20px;
+  width: 100%;
+  padding: 40px 5%;
+  background-color: var(--gray-bg, #e7e7e7);
 }
 
 footer .footer_text {
-  width: 55%;
-  color: var(--blue);
-  font-weight: 600;
-  font-family: 'Belanosima', sans-serif;
-  font-size: 1.2em;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 8px;
+  color: var(--blue, #1e3a8a);
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 1.1em;
 }
 
 .icons_box {
-  width: 20%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
-/* Fix Giant Social Logos */
 .icons_box img {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
+  width: 40px;
+  height: 40px;
 }
