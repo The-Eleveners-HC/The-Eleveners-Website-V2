@@ -115,7 +115,7 @@ nav a:hover {
 }
 
 .outlined-text::before {
-  content: "Welcome to our Blog page — a space where members share what’s happening behind the scenes at STEM October 11th District Hack Club. From session recaps and hackathon experiences to tech tips and personal reflections, every post here is written by a member of our club.";
+  content: "Welcome to our Blog page — a space where members share what's happening behind the scenes at The Eleveners Hack Club. From session recaps and hackathon experiences to tech tips and personal reflections, every post here is written by a member of our club.";
   position: absolute;
   top: 0;
   left: 0;
