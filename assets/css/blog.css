@@ -806,42 +806,6 @@ nav a:hover {
 /* Shared Footer Layout */
 footer {
   width: 100%;
-  height: 15%;
-  background-color: var(--gray-bg);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-footer .footer_text {
-  width: 55%;
-  height: 100%;
-  color: var(--blue);
-  font-weight: 600;
-  font-family: sans-serif;
-  font-size: 1.2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.icons_box {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-	/* CSS Variables Fallback for Blog Page */
-:root {
-  --blue: #1E3A8A;
-  --yellow: #FACC15;
-  --gray-bg: #e7e7e7;
-}
-
-/* Shared Footer Layout */
-footer {
-  width: 100%;
   min-height: 120px;
   background-color: var(--gray-bg);
   display: flex;
@@ -864,10 +828,10 @@ footer .footer_text {
 
 .icons_box {
   width: 20%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
 /* Fix Giant Social Logos */
 .icons_box img {
