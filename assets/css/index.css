@@ -325,7 +325,6 @@ footer .footer_text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
   color: var(--blue, #1e3a8a);
   font-weight: 600;
   font-family: sans-serif;
