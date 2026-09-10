@@ -1,0 +1,591 @@
+:root {
+  --black: #333;
+  --white: #f4f4f4;
+  --yellow: #facc14;
+  --blue: #1e3a8a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  line-height: 1;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+/* ----------------------------------------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+/* ----------------------------------------- */
+
+/* --- YELLOW SHADOWS --- */
+.thick_yellow_shadow {
+  text-shadow: 0px 5.5px 0px var(--yellow), 6.875px 1.375px 0px var(--yellow), 2.75px -6.325px 0px var(--yellow),
+    -5.5px -4.125px 0px var(--yellow), -5.225px 4.675px 0px var(--yellow), 3.3px 6.05px 0px var(--yellow),
+    6.6px -1.925px 0px var(--yellow), -0.55px -5.5px 0px var(--yellow), -6.875px -1.1px 0px var(--yellow),
+    -2.475px 6.6px 0px var(--yellow), 5.775px 3.575px 0px var(--yellow), 4.95px -4.95px 0px var(--yellow),
+    -3.575px -5.775px 0px var(--yellow), -6.6px 2.475px 0px var(--yellow), 1.1px 6.875px 0px var(--yellow),
+    6.875px 0.55px 0px var(--yellow), 1.925px -6.6px 0px var(--yellow), -6.05px -3.3px 0px var(--yellow),
+    -4.675px 5.225px 0px var(--yellow), 4.125px 5.5px 0px var(--yellow), 6.325px -2.75px 0px var(--yellow),
+    -1.375px -6.7375px 0px var(--yellow), -6.875px -0.06875px 0px var(--yellow), -1.5125px 6.7375px 0px var(--yellow),
+    6.325px 2.75px 0px var(--yellow), 4.125px -5.5px 0px var(--yellow), -4.675px -5.225px 0px var(--yellow),
+    -6.05px 3.3px 0px var(--yellow), 1.925px 6.6px 0px var(--yellow), 6.875px -0.4125px 0px var(--yellow),
+    1.1px -6.875px 0px var(--yellow), -6.4625px -2.475px 0px var(--yellow), -3.85px 5.775px 0px var(--yellow),
+    4.95px 4.95px 0px var(--yellow), 5.775px -3.575px 0px var(--yellow), -2.3375px -6.4625px 0px var(--yellow),
+    -6.7375px 1.7875px 0px var(--yellow), -0.55px 6.875px 0px var(--yellow), 6.6px 1.925px 0px var(--yellow),
+    3.3px -6.05px 0px var(--yellow), -5.225px -4.675px 0px var(--yellow), -5.6375px 4.125px 0px var(--yellow),
+    2.75px 6.325px 0px var(--yellow), 6.7375px -1.375px 0px var(--yellow), 0.06875px -6.875px 0px var(--yellow),
+    -6.66875px -1.58125px 0px var(--yellow), -2.95625px 6.1875px 0px var(--yellow), 5.43125px 4.2125px 0px var(--yellow);
+}
+
+.normal_yellow_shadow {
+  text-shadow: 0px 2.75px 0px var(--yellow), 3.4375px 0.6875px 0px var(--yellow), 1.375px -3.1625px 0px var(--yellow),
+    -2.75px -2.0625px 0px var(--yellow), -2.6125px 2.3375px 0px var(--yellow), 1.65px 3.025px 0px var(--yellow),
+    3.3px -0.9625px 0px var(--yellow), -0.275px -2.75px 0px var(--yellow), -3.4375px -0.55px 0px var(--yellow),
+    -1.2375px 3.3px 0px var(--yellow), 2.8875px 1.7875px 0px var(--yellow), 2.475px -2.475px 0px var(--yellow),
+    -1.7875px -2.8875px 0px var(--yellow), -3.3px 1.2375px 0px var(--yellow), 0.55px 3.4375px 0px var(--yellow),
+    3.4375px 0.275px 0px var(--yellow), 0.9625px -3.3px 0px var(--yellow), -3.025px -1.65px 0px var(--yellow),
+    -2.3375px 2.6125px 0px var(--yellow), 2.0625px 2.75px 0px var(--yellow), 3.1625px -1.375px 0px var(--yellow),
+    -0.6875px -3.36875px 0px var(--yellow), -3.4375px -0.034375px 0px var(--yellow),
+    -0.75625px 3.36875px 0px var(--yellow), 3.1625px 1.375px 0px var(--yellow), 2.0625px -2.75px 0px var(--yellow),
+    -2.3375px -2.6125px 0px var(--yellow), -3.025px 1.65px 0px var(--yellow), 0.9625px 3.3px 0px var(--yellow),
+    3.4375px -0.20625px 0px var(--yellow), 0.55px -3.4375px 0px var(--yellow), -3.23125px -1.2375px 0px var(--yellow),
+    -1.925px 2.8875px 0px var(--yellow), 2.475px 2.475px 0px var(--yellow), 2.8875px -1.7875px 0px var(--yellow),
+    -1.16875px -3.23125px 0px var(--yellow), -3.36875px 0.89375px 0px var(--yellow), -0.275px 3.4375px 0px var(--yellow),
+    3.3px 0.9625px 0px var(--yellow), 1.65px -3.025px 0px var(--yellow), -2.6125px -2.3375px 0px var(--yellow),
+    -2.81875px 2.0625px 0px var(--yellow), 1.375px 3.1625px 0px var(--yellow), 3.36875px -0.6875px 0px var(--yellow),
+    0.034375px -3.4375px 0px var(--yellow), -3.334375px -0.790625px 0px var(--yellow),
+    -1.478125px 3.09375px 0px var(--yellow), 2.715625px 2.10625px 0px var(--yellow);
+}
+
+.light_yellow_shadow {
+  text-shadow: 0px 1.375px 0px var(--yellow), 1.71875px 0.34375px 0px var(--yellow),
+    0.6875px -1.58125px 0px var(--yellow), -1.375px -1.03125px 0px var(--yellow), -1.30625px 1.16875px 0px var(--yellow),
+    0.825px 1.5125px 0px var(--yellow), 1.65px -0.48125px 0px var(--yellow), -0.1375px -1.375px 0px var(--yellow),
+    -1.71875px -0.275px 0px var(--yellow), -0.61875px 1.65px 0px var(--yellow), 1.44375px 0.89375px 0px var(--yellow),
+    1.2375px -1.2375px 0px var(--yellow), -0.89375px -1.44375px 0px var(--yellow), -1.65px 0.61875px 0px var(--yellow),
+    0.275px 1.71875px 0px var(--yellow), 1.71875px 0.1375px 0px var(--yellow), 0.48125px -1.65px 0px var(--yellow),
+    -1.5125px -0.825px 0px var(--yellow), -1.16875px 1.30625px 0px var(--yellow), 1.03125px 1.375px 0px var(--yellow),
+    1.58125px -0.6875px 0px var(--yellow), -0.34375px -1.684375px 0px var(--yellow),
+    -1.71875px -0.0171875px 0px var(--yellow), -0.378125px 1.684375px 0px var(--yellow),
+    1.58125px 0.6875px 0px var(--yellow), 1.03125px -1.375px 0px var(--yellow), -1.16875px -1.30625px 0px var(--yellow),
+    -1.5125px 0.825px 0px var(--yellow), 0.48125px 1.65px 0px var(--yellow), 1.71875px -0.103125px 0px var(--yellow),
+    0.275px -1.71875px 0px var(--yellow), -1.615625px -0.61875px 0px var(--yellow),
+    -0.9625px 1.44375px 0px var(--yellow), 1.2375px 1.2375px 0px var(--yellow), 1.44375px -0.89375px 0px var(--yellow),
+    -0.584375px -1.615625px 0px var(--yellow), -1.684375px 0.446875px 0px var(--yellow),
+    -0.1375px 1.71875px 0px var(--yellow), 1.65px 0.48125px 0px var(--yellow), 0.825px -1.5125px 0px var(--yellow),
+    -1.30625px -1.16875px 0px var(--yellow), -1.409375px 1.03125px 0px var(--yellow),
+    0.6875px 1.58125px 0px var(--yellow), 1.684375px -0.34375px 0px var(--yellow),
+    0.0171875px -1.71875px 0px var(--yellow), -1.6671875px -0.3953125px 0px var(--yellow),
+    -0.7390625px 1.546875px 0px var(--yellow), 1.3578125px 1.053125px 0px var(--yellow);
+}
+
+.lighter_yellow_shadow {
+  text-shadow: 0px 0.825px 0px var(--yellow), 1.125px 0.225px 0px var(--yellow), 0.4125px -0.9625px 0px var(--yellow),
+    -0.825px -0.6125px 0px var(--yellow), -0.7875px 0.675px 0px var(--yellow), 0.6px 1.125px 0px var(--yellow),
+    0.975px -0.285px 0px var(--yellow), -0.0825px -0.825px 0px var(--yellow), -1.125px -0.1875px 0px var(--yellow),
+    -0.4125px 0.975px 0px var(--yellow), 1.05px 0.6525px 0px var(--yellow), 0.975px -0.975px 0px var(--yellow),
+    -0.6525px -1.05px 0px var(--yellow), -0.975px 0.4125px 0px var(--yellow), 0.1875px 1.125px 0px var(--yellow),
+    1.125px 0.0825px 0px var(--yellow), 0.285px -0.975px 0px var(--yellow), -1.125px -0.6px 0px var(--yellow),
+    -0.675px 0.7875px 0px var(--yellow), 0.6125px 0.825px 0px var(--yellow), 0.9625px -0.4125px 0px var(--yellow),
+    -0.225px -1.065625px 0px var(--yellow), -1.125px -0.01125px 0px var(--yellow),
+    -0.24375px 1.065625px 0px var(--yellow), 0.9625px 0.4125px 0px var(--yellow), 0.6125px -0.825px 0px var(--yellow),
+    -0.675px -0.7875px 0px var(--yellow), -1.125px 0.6px 0px var(--yellow), 0.285px 0.975px 0px var(--yellow),
+    1.125px -0.05625px 0px var(--yellow), 0.1875px -1.125px 0px var(--yellow), -1.0875px -0.4125px 0px var(--yellow),
+    -0.5625px 1.05px 0px var(--yellow), 0.975px 0.975px 0px var(--yellow), 1.05px -0.6525px 0px var(--yellow),
+    -0.4875px -1.0875px 0px var(--yellow), -1.065625px 0.3375px 0px var(--yellow), -0.0825px 1.125px 0px var(--yellow),
+    0.975px 0.285px 0px var(--yellow), 0.6px -1.125px 0px var(--yellow), -0.7875px -0.675px 0px var(--yellow),
+    -0.91875px 0.6125px 0px var(--yellow), 0.4125px 0.9625px 0px var(--yellow), 1.065625px -0.225px 0px var(--yellow),
+    0.01125px -1.125px 0px var(--yellow), -1.11875px -0.26875px 0px var(--yellow),
+    -0.665625px 0.9375px 0px var(--yellow), 1.2375px 0.9375px 0px var(--yellow);
+}
+
+.lightest_yellow_shadow {
+  text-shadow: 0px 0.55px 1.1px var(--yellow), 0.6875px 0.1375px 1.1px var(--yellow),
+    0.275px -0.6325px 1.1px var(--yellow), -0.55px -0.4125px 1.1px var(--yellow), -0.5225px 0.4675px 1.1px var(--yellow),
+    0.33px 0.605px 1.1px var(--yellow), 0.66px -0.1925px 1.1px var(--yellow), -0.055px -0.55px 1.1px var(--yellow),
+    -0.6875px -0.11px 1.1px var(--yellow), -0.2475px 0.66px 1.1px var(--yellow), 0.5775px 0.3575px 1.1px var(--yellow),
+    0.495px -0.495px 1.1px var(--yellow), -0.3575px -0.5775px 1.1px var(--yellow), -0.66px 0.2475px 1.1px var(--yellow),
+    0.11px 0.6875px 1.1px var(--yellow), 0.6875px 0.055px 1.1px var(--yellow), 0.1925px -0.66px 1.1px var(--yellow),
+    -0.605px -0.33px 1.1px var(--yellow), -0.4675px 0.5225px 1.1px var(--yellow), 0.4125px 0.55px 1.1px var(--yellow),
+    0.6325px -0.275px 1.1px var(--yellow), -0.1375px -0.67375px 1.1px var(--yellow),
+    -0.6875px -0.006875px 1.1px var(--yellow), -0.15125px 0.67375px 1.1px var(--yellow),
+    0.6325px 0.275px 1.1px var(--yellow), 0.4125px -0.55px 1.1px var(--yellow), -0.4675px -0.5225px 1.1px var(--yellow),
+    -0.605px 0.33px 1.1px var(--yellow), 0.1925px 0.66px 1.1px var(--yellow), 0.6875px -0.04125px 1.1px var(--yellow),
+    0.11px -0.6875px 1.1px var(--yellow), -0.64625px -0.2475px 1.1px var(--yellow),
+    -0.385px 0.5775px 1.1px var(--yellow), 0.495px 0.495px 1.1px var(--yellow), 0.5775px -0.3575px 1.1px var(--yellow),
+    -0.23375px -0.64625px 1.1px var(--yellow), -0.67375px 0.17875px 1.1px var(--yellow),
+    -0.055px 0.6875px 1.1px var(--yellow), 0.66px 0.1925px 1.1px var(--yellow), 0.33px -0.605px 1.1px var(--yellow),
+    -0.5225px -0.4675px 1.1px var(--yellow), -0.56375px 0.4125px 1.1px var(--yellow),
+    0.275px 0.6325px 1.1px var(--yellow), 0.67375px -0.1375px 1.1px var(--yellow),
+    0.006875px -0.6875px 1.1px var(--yellow), -0.666875px -0.158125px 1.1px var(--yellow),
+    -0.295625px 0.61875px 1.1px var(--yellow), 0.543125px 0.42125px 1.1px var(--yellow);
+}
+
+/* --- BLUE SHADOWS --- */
+.thick_blue_shadow {
+  text-shadow: 0px 10px 0px var(--blue), 12.5px 2.5px 0px var(--blue), 5px -11.5px 0px var(--blue),
+    -10px -7.5px 0px var(--blue), -9.5px 8.5px 0px var(--blue), 6px 11px 0px var(--blue), 12px -3.5px 0px var(--blue),
+    -1px -10px 0px var(--blue), -12.5px -2px 0px var(--blue), -4.5px 12px 0px var(--blue), 10.5px 6.5px 0px var(--blue),
+    9px -9px 0px var(--blue), -6.5px -10.5px 0px var(--blue), -12px 4.5px 0px var(--blue), 2px 12.5px 0px var(--blue),
+    12.5px 1px 0px var(--blue), 3.5px -12px 0px var(--blue), -11px -6px 0px var(--blue), -8.5px 9.5px 0px var(--blue),
+    7.5px 10px 0px var(--blue), 11.5px -5px 0px var(--blue), -2.5px -12.25px 0px var(--blue),
+    -12.5px -0.125px 0px var(--blue), -2.75px 12.25px 0px var(--blue), 11.5px 5px 0px var(--blue),
+    7.5px -10px 0px var(--blue), -8.5px -9.5px 0px var(--blue), -11px 6px 0px var(--blue), 3.5px 12px 0px var(--blue),
+    12.5px -0.75px 0px var(--blue), 2px -12.5px 0px var(--blue), -11.75px -4.5px 0px var(--blue),
+    -7px 10.5px 0px var(--blue), 9px 9px 0px var(--blue), 10.5px -6.5px 0px var(--blue),
+    -4.25px -11.75px 0px var(--blue), -12.25px 3.25px 0px var(--blue), -1px 12.5px 0px var(--blue),
+    12px 3.5px 0px var(--blue), 6px -11px 0px var(--blue), -9.5px -8.5px 0px var(--blue), -10.25px 7.5px 0px var(--blue),
+    5px 11.5px 0px var(--blue), 12.25px -2.5px 0px var(--blue), 0.125px -12.5px 0px var(--blue),
+    -12.125px -2.875px 0px var(--blue), -5.375px 11.25px 0px var(--blue), 9.875px 7.625px 0px var(--blue);
+}
+
+.normal_blue_shadow {
+  text-shadow: 0px 5px 0px var(--blue), 6.25px 1.25px 0px var(--blue), 2.5px -5.75px 0px var(--blue),
+    -5px -3.75px 0px var(--blue), -4.75px 4.25px 0px var(--blue), 3px 5.5px 0px var(--blue), 6px -1.75px 0px var(--blue),
+    -0.5px -5px 0px var(--blue), -6.25px -1px 0px var(--blue), -2.25px 6px 0px var(--blue),
+    5.25px 3.25px 0px var(--blue), 4.5px -4.5px 0px var(--blue), -3.25px -5.25px 0px var(--blue),
+    -6px 2.25px 0px var(--blue), 1px 6.25px 0px var(--blue), 6.25px 0.5px 0px var(--blue), 1.75px -6px 0px var(--blue),
+    -5.5px -3px 0px var(--blue), -4.25px 4.75px 0px var(--blue), 3.75px 5px 0px var(--blue),
+    5.75px -2.5px 0px var(--blue), -1.25px -6.125px 0px var(--blue), -6.25px -0.0625px 0px var(--blue),
+    -1.375px 6.125px 0px var(--blue), 5.75px 2.5px 0px var(--blue), 3.75px -5px 0px var(--blue),
+    -4.25px -4.75px 0px var(--blue), -5.5px 3px 0px var(--blue), 1.75px 6px 0px var(--blue),
+    6.25px -0.375px 0px var(--blue), 1px -6.25px 0px var(--blue), -5.875px -2.25px 0px var(--blue),
+    -3.5px 5.25px 0px var(--blue), 4.5px 4.5px 0px var(--blue), 5.25px -3.25px 0px var(--blue),
+    -2.125px -5.875px 0px var(--blue), -6.125px 1.625px 0px var(--blue), -0.5px 6.25px 0px var(--blue),
+    6px 1.75px 0px var(--blue), 3px -5.5px 0px var(--blue), -4.75px -4.25px 0px var(--blue),
+    -5.125px 3.75px 0px var(--blue), 2.5px 5.75px 0px var(--blue), 6.125px -1.25px 0px var(--blue),
+    0.0625px -6.25px 0px var(--blue), -6.0625px -1.4375px 0px var(--blue), -2.6875px 5.625px 0px var(--blue),
+    4.9375px 3.8125px 0px var(--blue);
+}
+
+.light_blue_shadow {
+  text-shadow: 0px 2.5px 0px var(--blue), 3.125px 0.625px 0px var(--blue), 1.25px -2.875px 0px var(--blue),
+    -2.5px -1.875px 0px var(--blue), -2.375px 2.125px 0px var(--blue), 1.5px 2.75px 0px var(--blue),
+    3px -0.875px 0px var(--blue), -0.25px -2.5px 0px var(--blue), -3.125px -0.5px 0px var(--blue),
+    -1.125px 3px 0px var(--blue), 2.625px 1.625px 0px var(--blue), 2.25px -2.25px 0px var(--blue),
+    -1.625px -2.625px 0px var(--blue), -3px 1.125px 0px var(--blue), 0.5px 3.125px 0px var(--blue),
+    3.125px 0.25px 0px var(--blue), 0.875px -3px 0px var(--blue), -2.75px -1.5px 0px var(--blue),
+    -2.125px 2.375px 0px var(--blue), 1.875px 2.5px 0px var(--blue), 2.875px -1.25px 0px var(--blue),
+    -0.625px -3.0625px 0px var(--blue), -3.125px -0.03125px 0px var(--blue), -0.6875px 3.0625px 0px var(--blue),
+    2.875px 1.25px 0px var(--blue), 1.875px -2.5px 0px var(--blue), -2.125px -2.375px 0px var(--blue),
+    -2.75px 1.5px 0px var(--blue), 0.875px 3px 0px var(--blue), 3.125px -0.1875px 0px var(--blue),
+    0.5px -3.125px 0px var(--blue), -2.9375px -1.125px 0px var(--blue), -1.75px 2.625px 0px var(--blue),
+    2.25px 2.25px 0px var(--blue), 2.625px -1.625px 0px var(--blue), -1.0625px -2.9375px 0px var(--blue),
+    -3.0625px 0.8125px 0px var(--blue), -0.25px 3.125px 0px var(--blue), 3px 0.875px 0px var(--blue),
+    1.5px -2.75px 0px var(--blue), -2.375px -2.125px 0px var(--blue), -2.5625px 1.875px 0px var(--blue),
+    1.25px 2.875px 0px var(--blue), 3.0625px -0.625px 0px var(--blue), 0.03125px -3.125px 0px var(--blue),
+    -3.03125px -0.71875px 0px var(--blue), -1.34375px 2.8125px 0px var(--blue), 2.46875px 1.90625px 0px var(--blue);
+}
+
+.lighter_blue_shadow {
+  text-shadow: 0px 1.5px 0px var(--blue), 1.875px 0.375px 0px var(--blue), 0.75px -1.725px 0px var(--blue),
+    -1.5px -1.125px 0px var(--blue), -1.425px 1.275px 0px var(--blue), 0.9px 1.65px 0px var(--blue),
+    1.8px -0.525px 0px var(--blue), -0.15px -1.5px 0px var(--blue), -1.875px -0.3px 0px var(--blue),
+    -0.675px 1.8px 0px var(--blue), 1.575px 0.975px 0px var(--blue), 1.35px -1.35px 0px var(--blue),
+    -0.975px -1.575px 0px var(--blue), -1.8px 0.675px 0px var(--blue), 0.3px 1.875px 0px var(--blue),
+    1.875px 0.15px 0px var(--blue), 0.525px -1.8px 0px var(--blue), -1.65px -0.9px 0px var(--blue),
+    -1.275px 1.425px 0px var(--blue), 1.125px 1.5px 0px var(--blue), 1.725px -0.75px 0px var(--blue),
+    -0.375px -1.8375px 0px var(--blue), -1.875px -0.01875px 0px var(--blue), -0.4125px 1.8375px 0px var(--blue),
+    1.725px 0.75px 0px var(--blue), 1.125px -1.5px 0px var(--blue), -1.275px -1.425px 0px var(--blue),
+    -1.65px 0.9px 0px var(--blue), 0.525px 1.8px 0px var(--blue), 1.875px -0.1125px 0px var(--blue),
+    0.3px -1.875px 0px var(--blue), -1.7625px -0.675px 0px var(--blue), -1.05px 1.575px 0px var(--blue),
+    1.35px 1.35px 0px var(--blue), 1.575px -0.975px 0px var(--blue), -0.6375px -1.7625px 0px var(--blue),
+    -1.8375px 0.4875px 0px var(--blue), -0.15px 1.875px 0px var(--blue), 1.8px 0.525px 0px var(--blue),
+    0.9px -1.65px 0px var(--blue), -1.425px -1.275px 0px var(--blue), -1.5375px 1.125px 0px var(--blue),
+    0.75px 1.725px 0px var(--blue), 1.8375px -0.375px 0px var(--blue), 0.01875px -1.875px 0px var(--blue),
+    -1.81875px -0.43125px 0px var(--blue), -0.80625px 1.6875px 0px var(--blue), 1.48125px 1.14375px 0px var(--blue);
+}
+
+.lightest_blue_shadow {
+  text-shadow: 0px 0.55px 1.1px var(--blue), 0.6875px 0.1375px 1.1px var(--blue), 0.275px -0.6325px 1.1px var(--blue),
+    -0.55px -0.4125px 1.1px var(--blue), -0.5225px 0.4675px 1.1px var(--blue), 0.33px 0.605px 1.1px var(--blue),
+    0.66px -0.1925px 1.1px var(--blue), -0.055px -0.55px 1.1px var(--blue), -0.6875px -0.11px 1.1px var(--blue),
+    -0.2475px 0.66px 1.1px var(--blue), 0.5775px 0.3575px 1.1px var(--blue), 0.495px -0.495px 1.1px var(--blue),
+    -0.3575px -0.5775px 1.1px var(--blue), -0.66px 0.2475px 1.1px var(--blue), 0.11px 0.6875px 1.1px var(--blue),
+    0.6875px 0.055px 1.1px var(--blue), 0.1925px -0.66px 1.1px var(--blue), -0.605px -0.33px 1.1px var(--blue),
+    -0.4675px 0.5225px 1.1px var(--blue), 0.4125px 0.55px 1.1px var(--blue), 0.6325px -0.275px 1.1px var(--blue),
+    -0.1375px -0.67375px 1.1px var(--blue), -0.6875px -0.006875px 1.1px var(--blue),
+    -0.15125px 0.67375px 1.1px var(--blue), 0.6325px 0.275px 1.1px var(--blue), 0.4125px -0.55px 1.1px var(--blue),
+    -0.4675px -0.5225px 1.1px var(--blue), -0.605px 0.33px 1.1px var(--blue), 0.1925px 0.66px 1.1px var(--blue),
+    0.6875px -0.04125px 1.1px var(--blue), 0.11px -0.6875px 1.1px var(--blue), -0.64625px -0.2475px 1.1px var(--blue),
+    -0.385px 0.5775px 1.1px var(--blue), 0.495px 0.495px 1.1px var(--blue), 0.5775px -0.3575px 1.1px var(--blue),
+    -0.23375px -0.64625px 1.1px var(--blue), -0.67375px 0.17875px 1.1px var(--blue), -0.055px 0.6875px 1.1px var(--blue),
+    0.66px 0.1925px 1.1px var(--blue), 0.33px -0.605px 1.1px var(--blue), -0.5225px -0.4675px 1.1px var(--blue),
+    -0.56375px 0.4125px 1.1px var(--blue), 0.275px 0.6325px 1.1px var(--blue), 0.67375px -0.1375px 1.1px var(--blue),
+    0.006875px -0.6875px 1.1px var(--blue), -0.666875px -0.158125px 1.1px var(--blue),
+    -0.295625px 0.61875px 1.1px var(--blue), 0.543125px 0.42125px 1.1px var(--blue);
+}
+
+/* ----------------------------------------- */
+
+/* ----------------------------------------- */
+/* NAVIGATION */
+/* ----------------------------------------- */
+
+nav {
+  height: 11%;
+
+  background-color: var(--yellow);
+
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: auto;
+  height: 100%;
+  max-width: 120px;
+
+  object-fit: contain;
+}
+
+nav .menu {
+  height: 100%;
+  width: 50%;
+  margin-left: calc(40% - 120px);
+}
+
+nav .menu ul {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav .menu ul li a {
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: "Belanosima", sans-serif;
+  text-decoration: none;
+
+  color: var(--blue);
+}
+
+
+/* ----------------------------------------- */
+
+.intro {
+  width: 100%;
+  height: 85%;
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro_title_container {
+  width: 100%;
+  min-height: 75%;
+  background-image: linear-gradient(to right, rgba(250, 204, 20, 0.75), var(--blue));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro_title {
+  text-align: center;
+  color: var(--yellow);
+  font-size: 6em;
+  font-family: "Bangers", sans-serif;
+}
+
+.intro .intro_paragraph {
+  margin: 20px 0;
+  max-width: 80%;
+  height: calc(25% - 40px);
+  text-align: center;
+  color: var(--yellow);
+  font-size: 1.5em;
+  font-family: "Belanosima", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ----------------------------------------- */
+/* SESSION INFO */
+/* ----------------------------------------- */
+
+.session_info {
+  height: 100%;
+  border-radius: 10px;
+
+  background-color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inverted_title {
+  margin: 3% 0 0 0;
+  font-size: 5em;
+
+  color: var(--blue);
+}
+
+.session_info_box {
+  width: 80%;
+  height: 100%;
+  margin: 0 0 3% 0;
+  border-radius: 30px;
+
+  background-image: linear-gradient(to bottom, var(--white), #dcdcdc);
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.session_info p {
+  width: 90%;
+  margin: 2% 0;
+
+  color: var(--yellow);
+  text-align: center;
+  font-family: "Belanosima", sans-serif;
+}
+
+.session_info_text_1 {
+  font-size: 1.8em;
+}
+
+.session_info_text_2 {
+  font-size: 1.2em;
+}
+
+.session_info ul {
+  width: 90%;
+  margin: 3% 10%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.session_info ul li {
+  margin: 0 10%;
+  font-size: 1.2em;
+  line-height: 2.5em;
+  font-weight: 500;
+  font-family: "Belanosima", sans-serif;
+
+  color: var(--blue);
+}
+
+/* ----------------------------------------- */
+/* HIGHLIGHTED SESSIONS */
+/* ----------------------------------------- */
+
+.highlighted_sessions {
+  width: 100%;
+  height: 85%;
+
+  background-color: #e7e7e7;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlighted_sessions_box {
+  width: 100%;
+  height: 70%;
+  margin: 2% 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.session {
+  width: 25%;
+  height: 80%;
+  border-radius: 5px;
+
+  background-color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.session a {
+  height: 75%;
+  border-radius: 5px;
+  text-decoration: none;
+  background-size: cover;
+}
+
+.session .link_1 {
+  background-image: url("../images/video_thumbnail_1.jpg");
+}
+
+.session .link_2 {
+  background-image: url("../images/video_thumbnail_2.jpg");
+}
+
+.session .link_3 {
+  background-image: url("../images/video_thumbnail_3.jpg");
+}
+
+.blue_fade {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+
+  background-image: linear-gradient(
+    to left bottom,
+    rgba(30, 59, 138, 0),
+    rgba(30, 59, 138, 0),
+    rgba(30, 59, 138, 0),
+    rgba(30, 59, 138, 0),
+    rgba(30, 59, 138, 0),
+    rgba(30, 59, 138, 0.1),
+    rgba(30, 59, 138, 0.3),
+    rgba(30, 59, 138, 0.5),
+    rgba(30, 59, 138, 0.7),
+    rgba(30, 59, 138, 0.9),
+    rgba(30, 59, 138, 1),
+    rgba(30, 59, 138, 1),
+    rgba(30, 59, 138, 1),
+    var(--blue),
+    var(--blue),
+    var(--blue),
+    var(--blue)
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.session .blue_fade h3 {
+  width: 100%;
+  font-size: 2.5em;
+  line-height: 1.2em;
+  font-family: "bangers", sans-serif;
+  text-align: center;
+
+  color: var(--yellow);
+}
+
+.session p {
+  width: 80%;
+  margin: 5% 10%;
+  font-size: 1.2em;
+  text-align: center;
+  font-family: "Belanosima", sans-serif;
+
+  color: var(--blue);
+}
+
+/* ----------------------------------------- */
+/* OTHER ACTIVITIES */
+/* ----------------------------------------- */
+
+.other_activities {
+  width: 100%;
+  height: 80%;
+
+  background-color: var(--white);
+}
+
+.other_activities p {
+  margin: 5% 0 0 3%;
+  font-size: 2.5em;
+  font-family: "Belanosima", sans-serif;
+
+  color: var(--yellow);
+}
+
+.other_activities ul {
+  margin: 5% 0 0 5%;
+
+  list-style-position: inside;
+}
+
+.other_activities ul li {
+  margin: 1% 0;
+  font-size: 2em;
+
+  color: var(--yellow);
+}
+
+/* ----------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------- */
+
+footer {
+  width: 100%;
+  height: 15%;
+
+  background-color: #e7e7e7;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer .footer_text {
+  width: 55%;
+  height: 100%;
+
+  color: var(--blue);
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 1.2em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.icons_box {
+  width: 20%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
