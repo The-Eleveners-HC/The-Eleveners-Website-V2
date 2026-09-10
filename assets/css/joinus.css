@@ -337,16 +337,8 @@ section {
 }
 
 @media (max-width: 768px) {
-  header {
-    padding-right: 5%;
-  }
-
-  nav a {
-    margin-left: 1.5rem;
-    font-size: 1.2rem;
-  }
-
-  section {
+  
+   section {
     padding: 40px 20px;
   }
 
