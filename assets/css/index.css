@@ -271,4 +271,144 @@ section {
   font-weight: 400;
   padding: 0.5rem 2rem;
 } /* Added missing closing bracket */
+/* Tablet (≤1023px) */
+@media (max-width: 1023px) {
+  .hero article:first-child {
+    padding: 6rem 3rem;
+    gap: 3rem;
+  }
 
+  .hero article:first-child h1 {
+    font-size: 5.5rem;
+  }
+
+  .hero article:first-child h2 {
+    font-size: 3rem;
+  }
+
+  .hero article:nth-child(2) {
+    font-size: 1.5rem;
+    padding: 2rem 3rem;
+  }
+
+  .hero article:last-child {
+    flex-direction: column;
+  }
+
+  .hero article:last-child h2 {
+    min-width: auto;
+    font-size: 2.2rem;
+    padding: 2rem 0 0.5rem;
+  }
+
+  .hero article:last-child p {
+    padding: 0.5rem 1.5rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  .about h1 span {
+    font-size: 6rem;
+  }
+
+  .about h1 div {
+    font-size: 2.8rem;
+  }
+
+  .about article {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about .special p,
+  .about article:nth-child(3) p {
+    margin: 1.5rem;
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+  }
+
+  .about .special .spec,
+  .about article:nth-child(3) .spec {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about .special .finger,
+  .about article:nth-child(3) .spec-fing {
+    position: static;
+  }
+
+  .why article {
+    width: 90%;
+    font-size: 1.4rem;
+    padding: 1.2rem 2rem;
+  }
+
+  .why h1 {
+    font-size: 3.5rem;
+  }
+
+  .call h1 {
+    font-size: 3rem;
+    align-self: center;
+    padding: 3rem 2rem 0;
+    text-align: center;
+  }
+
+  .call p {
+    font-size: 1.4rem;
+    padding: 0 2rem;
+  }
+
+  .call a {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .hero article:first-child h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero article:first-child h2 {
+    font-size: 2rem;
+  }
+
+  .hero article:nth-child(2) {
+    font-size: 1.1rem;
+    padding: 1.5rem 1.5rem;
+  }
+
+  .about h1 {
+    flex-direction: column;
+  }
+
+  .about h1 span {
+    font-size: 3.5rem;
+  }
+
+  .about h1 div {
+    font-size: 2rem;
+  }
+
+  .why article {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .call h1 {
+    font-size: 2.2rem;
+  }
+
+  .call p {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .call a {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
