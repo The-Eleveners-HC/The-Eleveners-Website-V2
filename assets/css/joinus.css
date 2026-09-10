@@ -246,6 +246,19 @@ section {
   max-width: 1002px;
   margin: 0 auto;
   padding-left: 50px;
+
+  a {
+    color: #ff6b00;
+    text-decoration: none;
+  }
+
+    a:hover {
+    color: #cc5500;
+  }
+
+    a:visited {
+    color: #ff6b00;
+  }
 }
 
 /* Footer */
