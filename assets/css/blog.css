@@ -4,39 +4,73 @@
     box-sizing: border-box;
 }
 
-html, body {
+html {
   overflow-x: hidden;
 }
 
-header {
-    position: sticky;  
-    background-color: #FACC15;
-    width: 100%;
-    height: 11vh;
-    display: flex; 
-    justify-content: space-between;
+/* Smooth Page Fade Transition */
+body {
+    animation: fadeIn 0.4s ease-in-out;
 }
 
-header nav {
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Header Container */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12.5vh;
+    padding: 0 22.222% 0 0;
+    background: #FACC15;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Hack Club Flag (Fixed to Top-Left) */
+header .header-flag {
     display: flex;
     align-items: center;
-    gap: 3rem;
-    margin-right: 20%;
+    height: 100%;
 }
 
-header nav a {
-    color: #1E3A8A;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5rem;
-    font-family: 'Belanosima', sans-serif;
-}
-
-.logo {
-    max-height: 100%;
-    width: auto;
-    object-fit: contain;
+header img {
+    width: 13.1875rem;
+    height: auto;
+    cursor: pointer;
     display: block;
+}
+
+/* Navigation Links */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #1E3A8A;
+    font-size: 1.6rem;
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 4rem;
+    transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Hover States */
+nav a:hover {
+    color: #2563EB;
 }
 
 .intro {
