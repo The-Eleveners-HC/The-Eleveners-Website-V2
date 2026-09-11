@@ -1,4 +1,37 @@
-/* shared.css — linked by ALL 4 pages: index, joinus, sessions, blog */
+html {
+  overflow-x: hidden;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding-right: 5%;
+  }
+  header img {
+    width: 8rem;      /* was stuck at 13.1875rem */
+  }
+  nav a {
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 0 4%;
+  }
+  header img {
+    width: 6rem;
+  }
+  nav a {
+    margin-left: 0.8rem;
+    font-size: 1rem;
+  }
+}
 
 /* Reset */
 * {
