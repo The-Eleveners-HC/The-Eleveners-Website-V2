@@ -435,6 +435,10 @@ body {
     font-size: 1.1rem;
   }
 
+  header img {
+    width: 9rem;
+  }
+
   .intro h1, .pp, .ppp, .pppp {
     font-size: 4rem;
     margin-top: 3rem;
@@ -517,6 +521,10 @@ body {
 
   header nav a {
     font-size: 0.9rem;
+  }
+  
+  header img {
+    width: 6rem;
   }
 
   .intro h1, .pp, .ppp, .pppp {
