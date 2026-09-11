@@ -385,3 +385,15 @@ section {
     padding-left: 30px;
   }
 }
+/* Narrow Phone Styles (480px and below) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: clamp(2.25rem, 8vw, 2.5rem); /* ~36px - 40px */
+    line-height: 1.1;
+  }
+
+  .section-title {
+    font-size: 2.5rem; /* 40px */
+    line-height: 1.15;
+  }
+}
