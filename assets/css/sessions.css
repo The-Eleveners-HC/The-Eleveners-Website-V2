@@ -153,7 +153,7 @@ nav .menu ul li a {
 .inverted_title {
   margin: 3% 0 0 0;
   font-size: 5em;
-  color: var(--text-strong); /* Changed from var(--blue) */
+  color: var(--text-strong);
 }
 
 .session_info_box {
@@ -161,7 +161,7 @@ nav .menu ul li a {
   height: 100%;
   margin: 0 0 3% 0;
   border-radius: 30px;
-  background-image: linear-gradient(to bottom, var(--white), var(--gray-mid)); /* Replaced hardcoded #dcdcdc */
+  background-image: linear-gradient(to bottom, var(--white), var(--gray-mid));
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -197,7 +197,18 @@ nav .menu ul li a {
   line-height: 2.5em;
   font-weight: 500;
   font-family: "Belanosima", sans-serif;
-  color: var(--text-strong); /* Changed from var(--blue) */
+  color: var(--text-strong);
+}
+
+.session_info a {
+  color: #ff6b00;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.session_info a:hover {
+  color: #cc5500;
+  text-decoration: underline;
 }
 
 /* Highlighted Sessions */
@@ -273,7 +284,7 @@ nav .menu ul li a {
   font-size: 1.2em;
   text-align: center;
   font-family: "Belanosima", sans-serif;
-  color: var(--text-strong); /* Changed from var(--blue) */
+  color: var(--text-strong);
 }
 
 /* Other Activities */
