@@ -399,12 +399,13 @@ section {
 /* Narrow Phone Styles (480px and below) */
 @media (max-width: 480px) {
   .hero-title {
-    font-size: clamp(2.25rem, 8vw, 2.5rem);
-    line-height: 1.1;
+    font-size: 36px;
   }
-
   .section-title {
-    font-size: 2.5rem;
-    line-height: 1.15;
+    font-size: 40px;
+  }
+  .steps-list {
+    padding-left: 20px;
+    font-size: 18px;
   }
 }
