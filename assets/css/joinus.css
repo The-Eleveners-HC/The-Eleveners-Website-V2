@@ -10,6 +10,13 @@
   --font-body: "Belanosima", sans-serif;
 }
 
+/* Dark Mode Theme Overrides */
+html[data-theme="dark"] {
+  --color-background: #0F172A;
+  --color-light-gray: #1E293B;
+  --color-text-dark: #93C5FD;
+}
+
 /* Global & Reset */
 body {
   margin: 0;
@@ -17,6 +24,7 @@ body {
   background-color: var(--color-background);
   color: var(--color-text-dark);
   animation: fadeIn 0.4s ease-in-out;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @keyframes fadeIn {
@@ -60,6 +68,7 @@ section {
   min-height: 465px;
   padding: 60px 20px;
   text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 .hero-title {
@@ -142,10 +151,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 .swiper-text {
-  color: #000000;
+  color: var(--color-text-dark);
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 40px;
@@ -153,7 +163,7 @@ section {
 
 .feature-item {
   position: absolute;
-  color: var(--color-secondary);
+  color: var(--color-text-dark); /* Swapped from var(--color-secondary) */
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 20px;
@@ -172,7 +182,7 @@ section {
   top: 620px;
   left: 50%;
   transform: translateX(-50%);
-  color: var(--color-secondary);
+  color: var(--color-text-dark); /* Swapped from var(--color-secondary) */
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 20px;
@@ -238,7 +248,7 @@ section {
 }
 
 .steps-list {
-  color: var(--color-secondary);
+  color: var(--color-text-dark); /* Swapped from var(--color-secondary) */
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 24px;
@@ -252,11 +262,11 @@ section {
     text-decoration: none;
   }
 
-    a:hover {
+  a:hover {
     color: #cc5500;
   }
 
-    a:visited {
+  a:visited {
     color: #ff6b00;
   }
 }
@@ -350,8 +360,7 @@ section {
 }
 
 @media (max-width: 768px) {
-  
-   section {
+  section {
     padding: 40px 20px;
   }
 
@@ -385,15 +394,16 @@ section {
     padding-left: 30px;
   }
 }
+
 /* Narrow Phone Styles (480px and below) */
 @media (max-width: 480px) {
   .hero-title {
-    font-size: clamp(2.25rem, 8vw, 2.5rem); /* ~36px - 40px */
+    font-size: clamp(2.25rem, 8vw, 2.5rem);
     line-height: 1.1;
   }
 
   .section-title {
-    font-size: 2.5rem; /* 40px */
+    font-size: 2.5rem;
     line-height: 1.15;
   }
 }
