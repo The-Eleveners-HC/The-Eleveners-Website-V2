@@ -78,12 +78,12 @@ nav a:hover {
 
 /* Donation Pill Button Base */
 nav a.nav-btn-donation {
-  color: var(--blue) !important;
-  background-color: transparent !important;
-  border: 2px solid var(--blue) !important;
+  color: #FACC15 !important;            
+  background-color: #ffffff !important;    
+  border: 2px solid #ffffff !important;    
   border-radius: 9999px !important;
   padding: 0.4rem 1.25rem !important;
-  margin-left: 1.25rem !important; /* Brought closer to previous nav item */
+  margin-left: 1.5rem !important;       
   font-weight: 600 !important;
   display: inline-block;
   transition: all 0.2s ease-in-out !important;
@@ -91,9 +91,9 @@ nav a.nav-btn-donation {
 
 /* Mouse Hover State */
 nav a.nav-btn-donation:hover {
-  color: #ffffff !important;
-  background-color: var(--blue) !important;
-  border-color: var(--blue) !important;
+  color: #2563EB !important;               
+  background-color: transparent !important; 
+  border-color: #ffffff !important;        
 }
 
 /* Click State */
