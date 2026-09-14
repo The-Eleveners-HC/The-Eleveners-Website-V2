@@ -169,7 +169,7 @@ footer .footer_text {
 .icons_box img {
   width: 40px;
   height: 40px;
-  object-fit: contain;
+  flex-shrink: 0;
 }
 
 /* ==========================================
