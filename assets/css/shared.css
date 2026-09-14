@@ -78,11 +78,11 @@ nav a:hover {
 
 /* Donation Pill Button */
 nav a.nav-btn-donation {
-  color: #ffffff;
-  background-color: transparent;
+  color: #FACC15;
+  background-color: #ffffff;
   border: 1.5px solid #ffffff;
   border-radius: 9999px; /* Pill shape */
-  padding: 0.4rem 1.25rem;
+  padding: 0.4rem 1rem;
   font-weight: 600;
   display: inline-block;
   transition: all 0.2s ease-in-out;
@@ -90,8 +90,8 @@ nav a.nav-btn-donation {
 
 /* Mouse Hover State */
 nav a.nav-btn-donation:hover {
-  color: #ec3750; /* Hack Club Red / Red Accent */
-  background-color: #ffffff;
+  color: ##1E3A8A;
+  background-color: transparent;
   border-color: #ffffff;
 }
 
