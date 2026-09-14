@@ -5,6 +5,15 @@
   --footer-text: #1E3A8A; 
 }
 
+html {
+  overflow-x: hidden;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
 html[data-theme="dark"] {
   --bg-page: #0F172A;
   --toggle-bg: #FACC15;
