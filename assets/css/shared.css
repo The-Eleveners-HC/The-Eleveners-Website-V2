@@ -2,12 +2,15 @@
   --bg-page: #ffffff;
   --toggle-bg: #1E3A8A;
   --toggle-fg: #FACC15;
+  --footer-text: #1E3A8A; 
 }
 
 html[data-theme="dark"] {
   --bg-page: #0F172A;
   --toggle-bg: #FACC15;
   --toggle-fg: #1E3A8A;
+  --gray-bg: #1E293B;      
+  --footer-text: #93C5FD;  
 }
 
 body {
