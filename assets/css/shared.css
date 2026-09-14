@@ -76,27 +76,29 @@ nav a:hover {
   color: #2563EB;
 }
 
-/* Donation Button Style */
+/* Donation Pill Button */
 nav a.donation-btn {
-  color: #dc2626;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: transparent;
   border: 1.5px solid #ffffff;
-  border-radius: 1rem;
+  border-radius: 9999px; /* Pill shape */
   padding: 0.4rem 1.25rem;
   font-weight: 600;
+  display: inline-block;
   transition: all 0.2s ease-in-out;
 }
 
+/* Mouse Hover State */
 nav a.donation-btn:hover {
-  color: #ffffff;
-  background-color: transparent;
+  color: #ec3750; /* Hack Club Red / Red Accent */
+  background-color: #ffffff;
   border-color: #ffffff;
 }
 
+/* Click State */
 nav a.donation-btn:active {
   transform: scale(0.92);
 }
-
 /* Footer Base Styles */
 footer {
   display: flex;
