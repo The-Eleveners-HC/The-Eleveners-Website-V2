@@ -76,29 +76,31 @@ nav a:hover {
   color: #2563EB;
 }
 
-/* Donation Pill Button */
+/* Donation Pill Button Base */
 nav a.nav-btn-donation {
-  color: #FACC15;
-  background-color: #ffffff;
-  border: 1.5px solid #ffffff;
-  border-radius: 9999px; /* Pill shape */
-  padding: 0.4rem 1rem;
-  font-weight: 600;
+  color: var(--blue) !important;
+  background-color: transparent !important;
+  border: 2px solid var(--blue) !important;
+  border-radius: 9999px !important;
+  padding: 0.4rem 1.25rem !important;
+  margin-left: 1.25rem !important; /* Brought closer to previous nav item */
+  font-weight: 600 !important;
   display: inline-block;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out !important;
 }
 
 /* Mouse Hover State */
 nav a.nav-btn-donation:hover {
-  color: ##1E3A8A;
-  background-color: transparent;
-  border-color: #ffffff;
+  color: #ffffff !important;
+  background-color: var(--blue) !important;
+  border-color: var(--blue) !important;
 }
 
 /* Click State */
 nav a.nav-btn-donation:active {
   transform: scale(0.92);
 }
+
 /* Footer Base Styles */
 footer {
   display: flex;
@@ -150,9 +152,10 @@ footer .footer_text {
     margin-left: 1.5rem;
     font-size: 1.2rem;
   }
-  nav a.donation-btn {
-    padding: 0.3rem 0.9rem;
-    font-size: 1.1rem;
+  nav a.nav-btn-donation {
+    padding: 0.3rem 0.9rem !important;
+    font-size: 1.1rem !important;
+    margin-left: 0.8rem !important;
   }
 }
 
@@ -167,8 +170,9 @@ footer .footer_text {
     margin-left: 0.8rem;
     font-size: 1rem;
   }
-  nav a.donation-btn {
-    padding: 0.25rem 0.6rem;
-    font-size: 0.9rem;
+  nav a.nav-btn-donation {
+    padding: 0.25rem 0.6rem !important;
+    font-size: 0.9rem !important;
+    margin-left: 0.5rem !important;
   }
 }
