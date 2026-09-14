@@ -64,7 +64,7 @@ section {
 }
 
 .hero article:nth-child(2) {
-	color: #1E3A8A;
+	color: var(--idx-text, #1E3A8A);
 	font-size: 2rem;
 	padding: 3rem 8rem;
 }
@@ -212,10 +212,10 @@ section {
 	flex-direction: row;
 	align-items: center;
 	gap: 2rem;
-	background-color: #EBEBEB;
+	background-color: var(--idx-card, #EBEBEB);
 	border-radius: 1.5rem;
 	font-size: 2rem;
-	color: #1E3A8A;
+	color: var(--idx-text, #1E3A8A);
 	padding: 1.5rem 4rem 1.5rem 1.5rem;
 	width: 63rem;
 }
@@ -238,7 +238,7 @@ section {
 }
 
 .call h1 {
-	color: #1E3A8A;
+	color: var(--idx-text, #1E3A8A);
 	font-family: Bangers;
 	font-size: 4.6875rem;
 	font-weight: 400;
@@ -253,7 +253,7 @@ section {
 }
 
 .call p {
-	color: #1E3A8A;
+	color: var(--idx-text, #1E3A8A);
 	text-align: center;
 	font-family: Belanosima;
 	font-size: 2rem;
