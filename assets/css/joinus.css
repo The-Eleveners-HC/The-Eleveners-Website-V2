@@ -248,7 +248,7 @@ section {
 }
 
 .steps-list {
-  color: var(--color-text-dark); /* Swapped from var(--color-secondary) */
+  color: var(--color-text-dark);
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 24px;
@@ -265,10 +265,6 @@ section {
   a:hover {
     color: #cc5500;
   }
-
-  a:visited {
-    color: #ff6b00;
-  }
 }
 
 /* Footer */
@@ -279,7 +275,7 @@ section {
 
 .site-footer .page-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
