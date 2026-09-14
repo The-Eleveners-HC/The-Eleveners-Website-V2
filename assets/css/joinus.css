@@ -281,6 +281,9 @@ section {
   gap: 20px;
   padding: 30px 20px;
 }
+.site-footer .icons_box {
+  margin-left: 30px;
+}
 
 .footer-content {
   display: flex;
