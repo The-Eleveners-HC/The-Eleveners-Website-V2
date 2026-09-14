@@ -279,9 +279,11 @@ section {
 
 .site-footer .page-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 162px;
+  gap: 20px;
+  padding: 30px 20px;
 }
 
 .footer-content {
