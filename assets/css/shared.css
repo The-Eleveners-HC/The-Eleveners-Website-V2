@@ -1,39 +1,4 @@
-html {
-  overflow-x: hidden;
-}
-
-img, svg {
-  max-width: 100%;
-  height: auto;
-}
-
-@media (max-width: 768px) {
-  header {
-    padding-right: 5%;
-  }
-  header img {
-    width: 8rem;      /* was stuck at 13.1875rem */
-  }
-  nav a {
-    margin-left: 1.5rem;
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  header {
-    padding: 0 4%;
-  }
-  header img {
-    width: 6rem;
-  }
-  nav a {
-    margin-left: 0.8rem;
-    font-size: 1rem;
-  }
-}
-
-/* Reset */
+/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -42,6 +7,7 @@ img, svg {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -53,14 +19,19 @@ a {
   color: inherit;
 }
 
-/* Shared color variables */
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Shared Color Variables */
 :root {
   --blue: #1E3A8A;
   --yellow: #FACC15;
   --gray-bg: #e7e7e7;
 }
 
-/* Header */
+/* Header Base Styles */
 header {
   top: 0;
   left: 0;
@@ -105,7 +76,28 @@ nav a:hover {
   color: #2563EB;
 }
 
-/* Footer (social icons bar) */
+/* Donation Button Style */
+nav a.donation-btn {
+  color: #dc2626;
+  background-color: #ffffff;
+  border: 1.5px solid #ffffff;
+  border-radius: 1rem;
+  padding: 0.4rem 1.25rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a.donation-btn:hover {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+nav a.donation-btn:active {
+  transform: scale(0.92);
+}
+
+/* Footer Base Styles */
 footer {
   display: flex;
   flex-direction: row;
@@ -141,12 +133,40 @@ footer .footer_text {
   object-fit: contain;
 }
 
+/* ==========================================
+   MEDIA QUERIES
+   ========================================== */
+
 @media (max-width: 768px) {
   header {
     padding-right: 5%;
   }
+  header img {
+    width: 8rem;
+  }
   nav a {
     margin-left: 1.5rem;
     font-size: 1.2rem;
+  }
+  nav a.donation-btn {
+    padding: 0.3rem 0.9rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 0 4%;
+  }
+  header img {
+    width: 6rem;
+  }
+  nav a {
+    margin-left: 0.8rem;
+    font-size: 1rem;
+  }
+  nav a.donation-btn {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.9rem;
   }
 }
