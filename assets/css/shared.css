@@ -1,3 +1,36 @@
+:root {
+  --bg-page: #ffffff;
+  --toggle-bg: #1E3A8A;
+  --toggle-fg: #FACC15;
+}
+
+html[data-theme="dark"] {
+  --bg-page: #0F172A;
+  --toggle-bg: #FACC15;
+  --toggle-fg: #1E3A8A;
+}
+
+body {
+  background-color: var(--bg-page);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#theme-toggle {
+  background: var(--toggle-bg);
+  color: var(--toggle-fg);
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
 /* Reset & Base Styles */
 * {
   margin: 0;
